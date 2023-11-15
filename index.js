@@ -7,6 +7,11 @@ class baseDoHeroi {
 
     atacar(){
 
+        let dadoDeXp = 0
+        while(dadoDeXp <= 1){
+            dadoDeXp = Math.floor(Math.random() * 100)
+        }
+
         let ataque
     
         if (this.tipo == "mago") {
@@ -19,7 +24,7 @@ class baseDoHeroi {
             ataque = "shuriken"
         }
 
-        console.log(`O ${this.tipo} usou ${ataque}`)
+        console.log(`O ${this.tipo} usou ${ataque} e está nível ${dadoDeXp}`)
     }
 }
 
